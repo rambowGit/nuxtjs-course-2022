@@ -17,3 +17,23 @@
 
 </script>
 
+<<<<<<< HEAD
+=======
+<!-- <script>
+export default {
+	data () {
+		return {
+			count: 0
+		}
+	},
+	methods: {
+		increment() {
+			this.count++;
+		},
+		decrement() {
+			this.count--;
+		}
+	}
+};
+</script> -->
+>>>>>>> af4e0effa7d2faa238137197e992a0969892c27f
