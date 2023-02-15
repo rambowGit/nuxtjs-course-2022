@@ -1,0 +1,9 @@
+<template>
+	<h1>Profile page!</h1>
+</template>
+
+<script setup>
+	definePageMeta({
+		layout: "sidebar"
+	})
+</script>

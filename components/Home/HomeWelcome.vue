@@ -1,5 +1,5 @@
 <template>
 	<div>
-    <p>Hello World!</p>
+    <p>Home Welkome component</p>
 	</div>
 </template>
