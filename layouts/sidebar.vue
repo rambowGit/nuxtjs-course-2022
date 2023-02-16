@@ -1,12 +1,12 @@
 <template>
-	<main class="user-layout">
+	<main class="user-layout bg-gray-100">
 	
 		<article class="sidebar">
 			<p>Dashboard</p>
 			<p>Settings</p>
 		</article>
 		
-		<section class="content">
+		<section>
       <!-- here nuxt will replace page content -->
       <slot></slot>
   	</section>
@@ -23,7 +23,5 @@
 	.user-layout {
  		display: flex;
 	}
-	.content {
-		padding-inline: 1rem;
-	}
+
 </style>
