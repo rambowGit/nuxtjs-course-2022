@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'Counter': typeof import("../components/Counter.vue")['default']
     'HomeWelcome': typeof import("../components/Home/HomeWelcome.vue")['default']
+    'Navbar': typeof import("../components/Navbar.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -23,6 +24,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyCounter': typeof import("../components/Counter.vue")['default']
     'LazyHomeWelcome': typeof import("../components/Home/HomeWelcome.vue")['default']
+    'LazyNavbar': typeof import("../components/Navbar.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -46,6 +48,7 @@ declare module 'vue' {
 
 export const Counter: typeof import("../components/Counter.vue")['default']
 export const HomeWelcome: typeof import("../components/Home/HomeWelcome.vue")['default']
+export const Navbar: typeof import("../components/Navbar.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -66,6 +69,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyCounter: typeof import("../components/Counter.vue")['default']
 export const LazyHomeWelcome: typeof import("../components/Home/HomeWelcome.vue")['default']
+export const LazyNavbar: typeof import("../components/Navbar.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
