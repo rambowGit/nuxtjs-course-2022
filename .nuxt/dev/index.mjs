@@ -484,9 +484,13 @@ const errorHandler = (async function errorhandler(error, event) {
   event.node.res.end(await res.text());
 });
 
+const _lazy_LMya8F = () => Promise.resolve().then(function () { return iphones$3; });
+const _lazy_by7eJ7 = () => Promise.resolve().then(function () { return iphones$1; });
 const _lazy_1rPAT0 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
+  { route: '/api/iphones', handler: _lazy_LMya8F, lazy: true, middleware: false, method: undefined },
+  { route: '/iphones', handler: _lazy_by7eJ7, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_1rPAT0, lazy: true, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_1rPAT0, lazy: true, middleware: false, method: undefined }
 ];
@@ -612,6 +616,24 @@ const template = _template;
 const errorDev = /*#__PURE__*/Object.freeze({
   __proto__: null,
   template: template
+});
+
+const iphones$2 = defineEventHandler(() => {
+  return ["iphone-12", "iphone-12-pro", "iphone-13", "iphone-13-pro"];
+});
+
+const iphones$3 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: iphones$2
+});
+
+const iphones = defineEventHandler(() => {
+  return ["iphone-12", "iphone-12-pro", "iphone-13", "iphone-13-pro"];
+});
+
+const iphones$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: iphones
 });
 
 const appRootId = "__nuxt";

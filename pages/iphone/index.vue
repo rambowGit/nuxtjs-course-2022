@@ -19,8 +19,13 @@ useHead({
   title: "Nuxt3 - Iphones",
 });
 
-const iphones = ["iphone-12", "iphone-12-pro", "iphone-13", "iphone-13-pro"];
 
-// const { data } = useFetch("/iphones");
-// const iphones = data;
+// const iphones = ["iphone-12", "iphone-12-pro", "iphone-13", "iphone-13-pro"];
+
+// from API "server/api/iphones.ts"
+// const { data } = useFetch("/api/iphones");
+
+// from server route "server/routes/iphones.ts"
+const { data } = useFetch("/iphones");
+const iphones = data;
 </script>

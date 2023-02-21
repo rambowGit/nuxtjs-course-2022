@@ -3,7 +3,15 @@
 </template>
 
 <script setup>
+	
 	definePageMeta({
-		layout: "sidebar"
-	})
+		layout: "sidebar",
+		middleware: ["auth"]
+		
+		// middleware: () => {
+		// 	console.log("I am from middleware");
+		// 	const auth = useAuth();
+		// 	return auth.value.isAuthenticated;
+		// }
+	});
 </script>

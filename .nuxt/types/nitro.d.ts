@@ -2,6 +2,12 @@
 declare module 'nitropack' {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
+    '/api/iphones': {
+      'default': Awaited<ReturnType<typeof import('../../server/api/iphones').default>>
+    }
+    '/iphones': {
+      'default': Awaited<ReturnType<typeof import('../../server/routes/iphones').default>>
+    }
     '/__nuxt_error': {
       'default': Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>
     }
